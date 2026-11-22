@@ -1,0 +1,5 @@
+# Sample parks
+
+Pine Grove is a national park in Exampleland. It covers 12 square kilometers.
+
+Lake Hill is a national park in Exampleland. It covers 24 square kilometers.

@@ -1,0 +1,718 @@
+# Question type dataset for few-shot classifier verification
+# 25 examples per type × 7 types = 175 total
+# First 15 per type → few-shot examples (embedded in classifier)
+# Last 10 per type  → holdout for verify_classifier()
+
+# ─── aggregation ─────────────────────────────────────────────────────────────
+- id: "agg_001"
+  type: aggregation
+  question: "How many national parks are located in Spain?"
+
+- id: "agg_002"
+  type: aggregation
+  question: "Which parks in the book were established before 1950?"
+
+- id: "agg_003"
+  type: aggregation
+  question: "How many parks report a highest point above 3000 metres?"
+
+- id: "agg_004"
+  type: aggregation
+  question: "List all national parks profiled in Scandinavia."
+
+- id: "agg_005"
+  type: aggregation
+  question: "How many parks have UNESCO World Heritage status?"
+
+- id: "agg_006"
+  type: aggregation
+  question: "Which parks are located on islands?"
+
+- id: "agg_007"
+  type: aggregation
+  question: "List all parks with a recorded visitor count exceeding 1 million per year."
+
+- id: "agg_008"
+  type: aggregation
+  question: "How many parks were established in the 20th century?"
+
+- id: "agg_009"
+  type: aggregation
+  question: "Which parks contain active volcanoes?"
+
+- id: "agg_010"
+  type: aggregation
+  question: "How many parks protect brown bear populations?"
+
+- id: "agg_011"
+  type: aggregation
+  question: "List all parks located in the Alps."
+
+- id: "agg_012"
+  type: aggregation
+  question: "How many parks have an area exceeding 1000 square kilometres?"
+
+- id: "agg_013"
+  type: aggregation
+  question: "Which parks border the sea or ocean?"
+
+- id: "agg_014"
+  type: aggregation
+  question: "How many parks have formal twin-park relationships across international borders?"
+
+- id: "agg_015"
+  type: aggregation
+  question: "Which parks are designated as UNESCO Biosphere Reserves?"
+
+# holdout (10)
+- id: "agg_016"
+  type: aggregation
+  question: "List all parks that protect wolf populations."
+
+- id: "agg_017"
+  type: aggregation
+  question: "How many parks contain significant cave systems?"
+
+- id: "agg_018"
+  type: aggregation
+  question: "Which parks were originally established to protect an endangered species?"
+
+- id: "agg_019"
+  type: aggregation
+  question: "How many parks have an area smaller than 100 square kilometres?"
+
+- id: "agg_020"
+  type: aggregation
+  question: "List all parks in the Mediterranean region."
+
+- id: "agg_021"
+  type: aggregation
+  question: "How many parks contain named waterfalls?"
+
+- id: "agg_022"
+  type: aggregation
+  question: "Which parks are located entirely above 1000 metres elevation?"
+
+- id: "agg_023"
+  type: aggregation
+  question: "How many parks record lynx populations?"
+
+- id: "agg_024"
+  type: aggregation
+  question: "Which parks include a designated marine area?"
+
+- id: "agg_025"
+  type: aggregation
+  question: "List all parks in countries that joined the EU after 2000."
+
+# ─── superlative ─────────────────────────────────────────────────────────────
+- id: "sup_001"
+  type: superlative
+  question: "Which park has the largest total area?"
+
+- id: "sup_002"
+  type: superlative
+  question: "What is the highest elevation point recorded in any park in the book?"
+
+- id: "sup_003"
+  type: superlative
+  question: "Which park receives the most visitors per year?"
+
+- id: "sup_004"
+  type: superlative
+  question: "Which park was established the earliest?"
+
+- id: "sup_005"
+  type: superlative
+  question: "Which country has the most national parks profiled in the book?"
+
+- id: "sup_006"
+  type: superlative
+  question: "What is the smallest park by area?"
+
+- id: "sup_007"
+  type: superlative
+  question: "Which park has the highest recorded number of bird species?"
+
+- id: "sup_008"
+  type: superlative
+  question: "What is the oldest named tree mentioned in the book?"
+
+- id: "sup_009"
+  type: superlative
+  question: "Which park was established most recently?"
+
+- id: "sup_010"
+  type: superlative
+  question: "Which park has the deepest lake?"
+
+- id: "sup_011"
+  type: superlative
+  question: "What is the greatest number of glaciers recorded within a single park?"
+
+- id: "sup_012"
+  type: superlative
+  question: "What is the earliest recorded historical event associated with any park?"
+
+- id: "sup_013"
+  type: superlative
+  question: "Which park has the most documented prehistoric sites?"
+
+- id: "sup_014"
+  type: superlative
+  question: "What is the maximum altitude difference within a single park?"
+
+- id: "sup_015"
+  type: superlative
+  question: "Which park has the highest number of endemic species?"
+
+# holdout (10)
+- id: "sup_016"
+  type: superlative
+  question: "Which park has the longest coastline?"
+
+- id: "sup_017"
+  type: superlative
+  question: "What is the maximum recorded annual rainfall in any park?"
+
+- id: "sup_018"
+  type: superlative
+  question: "Which park has the most recorded mammal species?"
+
+- id: "sup_019"
+  type: superlative
+  question: "What is the most recent year of UNESCO inscription in the book?"
+
+- id: "sup_020"
+  type: superlative
+  question: "Which park covers the greatest percentage of its country's land area?"
+
+- id: "sup_021"
+  type: superlative
+  question: "What is the highest peak accessible to visitors without technical climbing?"
+
+- id: "sup_022"
+  type: superlative
+  question: "Which park has the largest number of named lakes?"
+
+- id: "sup_023"
+  type: superlative
+  question: "What is the longest hiking trail network mentioned in any park?"
+
+- id: "sup_024"
+  type: superlative
+  question: "Which park has the highest visitor centre altitude?"
+
+- id: "sup_025"
+  type: superlative
+  question: "What is the lowest elevation point recorded across all parks?"
+
+# ─── absence ─────────────────────────────────────────────────────────────────
+- id: "abs_001"
+  type: absence
+  question: "Which of the following threats is NOT mentioned for this park: drought, flooding, or invasive species?"
+
+- id: "abs_002"
+  type: absence
+  question: "Of these conservation strategies, which one is NOT discussed: rewilding, controlled burns, or captive breeding?"
+
+- id: "abs_003"
+  type: absence
+  question: "Which activity is NOT mentioned as available to visitors: kayaking, hot-air ballooning, or guided hikes?"
+
+- id: "abs_004"
+  type: absence
+  question: "Of glaciation, tectonics, and erosion, which geological process is NOT discussed in relation to this park?"
+
+- id: "abs_005"
+  type: absence
+  question: "Which of the following animals is NOT named as a resident species: lynx, wolverine, or chamois?"
+
+- id: "abs_006"
+  type: absence
+  question: "Of these habitat types, which is NOT mentioned: peatbog, salt marsh, or sand dune?"
+
+- id: "abs_007"
+  type: absence
+  question: "Which of these designations is NOT applied to the park: Ramsar site, Natura 2000, or Dark Sky reserve?"
+
+- id: "abs_008"
+  type: absence
+  question: "Of avalanche risk, rockfall, and subsidence, which is NOT cited as a hazard?"
+
+- id: "abs_009"
+  type: absence
+  question: "Which of these traditional practices is NOT mentioned: transhumance, charcoal burning, or hay meadow management?"
+
+- id: "abs_010"
+  type: absence
+  question: "Of these recreational activities, which is NOT referenced: skiing, rock climbing, or paragliding?"
+
+- id: "abs_011"
+  type: absence
+  question: "Of earthquake activity, volcanic eruption, and tsunami, which is NOT documented for this region?"
+
+- id: "abs_012"
+  type: absence
+  question: "Which of the following is NOT listed as a lake within the park: Crater Lake, Mirror Lake, or Thunder Lake?"
+
+- id: "abs_013"
+  type: absence
+  question: "Of poaching, pollution, and climate change, which threat is NOT discussed for this specific park?"
+
+- id: "abs_014"
+  type: absence
+  question: "Which accessibility feature is NOT mentioned: wheelchair-accessible trails, audio guides, or sign-language tours?"
+
+- id: "abs_015"
+  type: absence
+  question: "Of these economic activities, which is NOT mentioned as occurring near the park: mining, timber harvesting, or fishing?"
+
+# holdout (10)
+- id: "abs_016"
+  type: absence
+  question: "Which of these plant communities is NOT described: alpine meadow, deciduous forest, or coastal scrub?"
+
+- id: "abs_017"
+  type: absence
+  question: "Of fire ecology, flood dynamics, and wind erosion, which natural process is NOT discussed?"
+
+- id: "abs_018"
+  type: absence
+  question: "Which visitor facility is NOT mentioned: overnight hut, restaurant, or souvenir shop?"
+
+- id: "abs_019"
+  type: absence
+  question: "Of these languages, which is NOT used on park signage: English, German, or Catalan?"
+
+- id: "abs_020"
+  type: absence
+  question: "Which of the following historical events is NOT mentioned: Roman occupation, medieval monastery, or Viking settlement?"
+
+- id: "abs_021"
+  type: absence
+  question: "Of these transport options, which is NOT mentioned for reaching the park: train, ferry, or helicopter?"
+
+- id: "abs_022"
+  type: absence
+  question: "Which of the following scientists is NOT mentioned in connection with the park: Humboldt, Darwin, or Whymper?"
+
+- id: "abs_023"
+  type: absence
+  question: "Of these conservation outcomes, which is NOT reported: population recovery, reintroduction, or captive breeding success?"
+
+- id: "abs_024"
+  type: absence
+  question: "Which infrastructure type is NOT mentioned: visitor centre, cable car, or camping ground?"
+
+- id: "abs_025"
+  type: absence
+  question: "Of these bird families, which is NOT recorded in the park: raptors, waders, or parrots?"
+
+# ─── contradiction ────────────────────────────────────────────────────────────
+- id: "con_001"
+  type: contradiction
+  question: "Find a contradiction in the book related to the area of a specific park."
+
+- id: "con_002"
+  type: contradiction
+  question: "What inconsistency exists in the claims about which park is the largest?"
+
+- id: "con_003"
+  type: contradiction
+  question: "Identify a conflicting statement about the year a particular park was established."
+
+- id: "con_004"
+  type: contradiction
+  question: "Find a contradiction involving the elevation of a named peak."
+
+- id: "con_005"
+  type: contradiction
+  question: "What inconsistent claims are made about a park's annual visitor numbers?"
+
+- id: "con_006"
+  type: contradiction
+  question: "Identify contradictory statements about a species' conservation status."
+
+- id: "con_007"
+  type: contradiction
+  question: "Find a contradiction involving the area units used for a specific park."
+
+- id: "con_008"
+  type: contradiction
+  question: "What conflicting information appears about a park's UNESCO designation date?"
+
+- id: "con_009"
+  type: contradiction
+  question: "Identify an inconsistency in the reported number of lakes within a specific park."
+
+- id: "con_010"
+  type: contradiction
+  question: "Find a contradiction in the claims about which park was established first."
+
+- id: "con_011"
+  type: contradiction
+  question: "What inconsistent information appears about a park spanning two countries?"
+
+- id: "con_012"
+  type: contradiction
+  question: "Identify conflicting dates given for the same historical event in the document."
+
+- id: "con_013"
+  type: contradiction
+  question: "Find a contradictory claim about which summit holds a specific altitude record."
+
+- id: "con_014"
+  type: contradiction
+  question: "What inconsistency exists in the reported length of a specific river?"
+
+- id: "con_015"
+  type: contradiction
+  question: "Identify conflicting statements about a park's inclusion on the World Heritage List."
+
+# holdout (10)
+- id: "con_016"
+  type: contradiction
+  question: "Find a contradiction about which species was reintroduced and when."
+
+- id: "con_017"
+  type: contradiction
+  question: "What conflicting claims are made about the depth of the deepest lake in the park?"
+
+- id: "con_018"
+  type: contradiction
+  question: "Identify an inconsistency in the reported number of bird species recorded."
+
+- id: "con_019"
+  type: contradiction
+  question: "Find a contradiction about which region or country a specific park is assigned to."
+
+- id: "con_020"
+  type: contradiction
+  question: "What inconsistency exists in the annual rainfall figures given for a park?"
+
+- id: "con_021"
+  type: contradiction
+  question: "Identify conflicting claims about which traditional community inhabits the park area."
+
+- id: "con_022"
+  type: contradiction
+  question: "Find a contradiction about the type of rock formation that forms a landmark."
+
+- id: "con_023"
+  type: contradiction
+  question: "What conflicting information is given about the park's founding legislation?"
+
+- id: "con_024"
+  type: contradiction
+  question: "Identify an inconsistency in the reported first ascent date of a named peak."
+
+- id: "con_025"
+  type: contradiction
+  question: "Find a contradiction between a park's stated area and the area implied by boundary descriptions."
+
+# ─── cross_section ────────────────────────────────────────────────────────────
+- id: "crs_001"
+  type: cross_section
+  question: "What do the parks of Norway and Iceland have in common geologically?"
+
+- id: "crs_002"
+  type: cross_section
+  question: "Compare the founding histories of parks established during the 20th-century conservation movement."
+
+- id: "crs_003"
+  type: cross_section
+  question: "Which parks in both the British Isles and the Iberian Peninsula face similar visitor pressure?"
+
+- id: "crs_004"
+  type: cross_section
+  question: "How do Alpine parks differ from Atlantic coastal parks in terms of biodiversity?"
+
+- id: "crs_005"
+  type: cross_section
+  question: "What conservation strategies are shared between parks that protect large carnivores?"
+
+- id: "crs_006"
+  type: cross_section
+  question: "Compare the role of UNESCO designations across parks in the Mediterranean and Northern Europe."
+
+- id: "crs_007"
+  type: cross_section
+  question: "How does the relationship between indigenous peoples and park management differ between Scandinavian and Central European parks?"
+
+- id: "crs_008"
+  type: cross_section
+  question: "Which parks across different countries share the same flagship species?"
+
+- id: "crs_009"
+  type: cross_section
+  question: "Compare the geological origins of parks formed by volcanic activity versus those formed by glaciation."
+
+- id: "crs_010"
+  type: cross_section
+  question: "How do visitor facilities in island parks compare to those of continental mountain parks?"
+
+- id: "crs_011"
+  type: cross_section
+  question: "Compare the founding purposes of parks established before World War II versus those established after."
+
+- id: "crs_012"
+  type: cross_section
+  question: "Which parks in Eastern Europe share conservation challenges related to post-communist land management?"
+
+- id: "crs_013"
+  type: cross_section
+  question: "Compare the involvement of local communities across parks in Western and Eastern Europe."
+
+- id: "crs_014"
+  type: cross_section
+  question: "What common narrative themes link parks described in chapters about human habitation?"
+
+- id: "crs_015"
+  type: cross_section
+  question: "How do the conservation success stories in the book compare across parks with different governance models?"
+
+# holdout (10)
+- id: "crs_016"
+  type: cross_section
+  question: "Compare the threatened species profiles of island parks with those of mainland parks."
+
+- id: "crs_017"
+  type: cross_section
+  question: "How does the scale of glacial landscape transformation compare between Arctic and temperate parks?"
+
+- id: "crs_018"
+  type: cross_section
+  question: "Which parks feature similar traditional land-use practices and how does this affect their ecology?"
+
+- id: "crs_019"
+  type: cross_section
+  question: "Compare the challenges of managing invasive species in island parks versus continental parks."
+
+- id: "crs_020"
+  type: cross_section
+  question: "How do sustainable tourism approaches compare across Alpine parks and coastal parks?"
+
+- id: "crs_021"
+  type: cross_section
+  question: "Compare the relationship between parkland and surrounding farmland across Mediterranean and Northern European parks."
+
+- id: "crs_022"
+  type: cross_section
+  question: "What similarities exist between parks that serve as cross-border conservation areas?"
+
+- id: "crs_023"
+  type: cross_section
+  question: "Compare the role of scientific research stations across parks in different regions."
+
+- id: "crs_024"
+  type: cross_section
+  question: "How does the experience of hiking differ across parks in different climate zones?"
+
+- id: "crs_025"
+  type: cross_section
+  question: "What do parks that host migratory bird populations have in common?"
+
+# ─── global_synthesis ─────────────────────────────────────────────────────────
+- id: "glo_001"
+  type: global_synthesis
+  question: "How does the book as a whole portray Europe's national parks?"
+
+- id: "glo_002"
+  type: global_synthesis
+  question: "What is the overarching narrative about human impact on protected landscapes across the book?"
+
+- id: "glo_003"
+  type: global_synthesis
+  question: "How does the author characterise the balance between tourism and conservation throughout the book?"
+
+- id: "glo_004"
+  type: global_synthesis
+  question: "What recurring themes connect all the park profiles in the book?"
+
+- id: "glo_005"
+  type: global_synthesis
+  question: "How does the book present the relationship between geological history and ecological diversity?"
+
+- id: "glo_006"
+  type: global_synthesis
+  question: "What overall argument does the book make about the importance of protected areas?"
+
+- id: "glo_007"
+  type: global_synthesis
+  question: "How does the book portray the role of national parks in preserving cultural heritage?"
+
+- id: "glo_008"
+  type: global_synthesis
+  question: "What is the book's general stance on climate change and its effects on European parks?"
+
+- id: "glo_009"
+  type: global_synthesis
+  question: "How does the author treat the tension between local communities and park authorities across the book?"
+
+- id: "glo_010"
+  type: global_synthesis
+  question: "What patterns in conservation success and failure does the book identify?"
+
+- id: "glo_011"
+  type: global_synthesis
+  question: "What role does the book assign to international designations like UNESCO in park protection?"
+
+- id: "glo_012"
+  type: global_synthesis
+  question: "How does the author present the evolution of conservation thinking from early park creation to the present?"
+
+- id: "glo_013"
+  type: global_synthesis
+  question: "What view of wilderness versus managed landscape does the book consistently promote?"
+
+- id: "glo_014"
+  type: global_synthesis
+  question: "How does the book frame national parks as part of a broader European environmental heritage?"
+
+- id: "glo_015"
+  type: global_synthesis
+  question: "What overall picture of European biodiversity emerges from the collected park profiles?"
+
+# holdout (10)
+- id: "glo_016"
+  type: global_synthesis
+  question: "How does the book handle the topic of rewilding and species reintroduction across all park entries?"
+
+- id: "glo_017"
+  type: global_synthesis
+  question: "What does the book suggest about the future of biodiversity in Europe?"
+
+- id: "glo_018"
+  type: global_synthesis
+  question: "How does the book address the challenge of maintaining park integrity in the face of development pressure?"
+
+- id: "glo_019"
+  type: global_synthesis
+  question: "What narrative arc connects the book's treatment of industrial history and ecological restoration?"
+
+- id: "glo_020"
+  type: global_synthesis
+  question: "How does the book portray the significance of indigenous and traditional knowledge in conservation?"
+
+- id: "glo_021"
+  type: global_synthesis
+  question: "What does the author's selection of parks reveal about European conservation priorities?"
+
+- id: "glo_022"
+  type: global_synthesis
+  question: "How does the book characterise scientific research as a tool for park management?"
+
+- id: "glo_023"
+  type: global_synthesis
+  question: "What does the book say about the relationship between protected areas and national identity?"
+
+- id: "glo_024"
+  type: global_synthesis
+  question: "How does the book treat the concept of ecological connectivity across political borders?"
+
+- id: "glo_025"
+  type: global_synthesis
+  question: "How does glaciation recur as a narrative device throughout the book's park descriptions?"
+
+# ─── needle ───────────────────────────────────────────────────────────────────
+- id: "ndl_001"
+  type: needle
+  question: "What year was Plitvice Lakes National Park established?"
+
+- id: "ndl_002"
+  type: needle
+  question: "Who made the first ascent of Barre des Écrins?"
+
+- id: "ndl_003"
+  type: needle
+  question: "What is the area of Vatnajökull National Park in square kilometres?"
+
+- id: "ndl_004"
+  type: needle
+  question: "Which peak is the highest point in the Swiss National Park?"
+
+- id: "ndl_005"
+  type: needle
+  question: "When was Durmitor National Park inscribed on the UNESCO World Heritage List?"
+
+- id: "ndl_006"
+  type: needle
+  question: "What is the total number of lakes in Plitvice Lakes National Park?"
+
+- id: "ndl_007"
+  type: needle
+  question: "In which year did the first recorded eruption of Etna occur?"
+
+- id: "ndl_008"
+  type: needle
+  question: "What is the height of Veliki Slap waterfall?"
+
+- id: "ndl_009"
+  type: needle
+  question: "Which river flows through the Doñana National Park?"
+
+- id: "ndl_010"
+  type: needle
+  question: "How many islands make up the Atlantic Islands of Galicia National Park?"
+
+- id: "ndl_011"
+  type: needle
+  question: "What species of pine is the oldest tree mentioned in Pirin National Park?"
+
+- id: "ndl_012"
+  type: needle
+  question: "What is the highest point of Kornati Islands National Park in metres?"
+
+- id: "ndl_013"
+  type: needle
+  question: "When did the Icehotel first open?"
+
+- id: "ndl_014"
+  type: needle
+  question: "What is the total area of Hohe Tauern National Park?"
+
+- id: "ndl_015"
+  type: needle
+  question: "What is the name of the highest peak in Jotunheimen National Park?"
+
+# holdout (10)
+- id: "ndl_016"
+  type: needle
+  question: "What year was the Swiss National Park founded?"
+
+- id: "ndl_017"
+  type: needle
+  question: "In what year was Cairngorms designated as a national park?"
+
+- id: "ndl_018"
+  type: needle
+  question: "What is the area of Paklenica National Park in square kilometres?"
+
+- id: "ndl_019"
+  type: needle
+  question: "In what year was Tatranský Národný Park established?"
+
+- id: "ndl_020"
+  type: needle
+  question: "What is the name of the glacier covering most of Vatnajökull National Park?"
+
+- id: "ndl_021"
+  type: needle
+  question: "When did the Icehotel start as a small igloo-art gallery?"
+
+- id: "ndl_022"
+  type: needle
+  question: "What year was Lake Skadar National Park established?"
+
+- id: "ndl_023"
+  type: needle
+  question: "How many fish species are recorded in Lake Skadar National Park?"
+
+- id: "ndl_024"
+  type: needle
+  question: "What is the area of Durmitor National Park in square kilometres?"
+
+- id: "ndl_025"
+  type: needle
+  question: "What is the highest peak in Durmitor National Park?"

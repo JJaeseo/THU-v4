@@ -1,0 +1,7 @@
+.env
+.env.*
+.venv/
+**/.streamlit/secrets.toml
+**/.ipynb_checkpoints/
+**/__pycache__/
+/pipeline_v4/outputs_v4/
